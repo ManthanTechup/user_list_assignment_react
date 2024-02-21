@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.error {
+  font-size: 12px !important;
+  color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#login {
+  background: #B5C0D0;
 }
 
-.App-header {
-  background-color: #282c34;
+#login .login-container {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#login .login-box {
+  margin: 2rem auto;
+  background-color: #ffffff;
+  min-width: 40vw;
+  max-width: 80vw;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#login .showHidePassword {
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.5s ease;
+}
+
+#login .showHidePassword:hover {
+  color: gray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.profile-card {
+  width: 14rem;
+}
+
+
+.profile-page-card img,
+.profile-card img {
+  height: 8rem;
+  object-fit: cover;
+}
+
+.profile-page-container {
+  background-color: #F2EFE5;
+  min-height: 100lvh;
 }
